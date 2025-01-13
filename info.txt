@@ -1,0 +1,11 @@
+Browser: Engines: v8
+1. Chrome: chrome, chromium
+2. Firefox: developer editor
+3. Edge:
+4. Opera
+5. Brave
+6. Safari: 
+
+windows safari
+debug:
+

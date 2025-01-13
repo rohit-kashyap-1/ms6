@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 1000px;
+            margin: auto;
+            gap: 20px;
+        }
+
+        .container img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img data-src="1.jpg" alt="" title="">
+        <img data-src="2.jpg">
+        <img data-src="3.jpg">
+        <img data-src="5.jpg">
+    </div>
+
+    <button id="load">Load</button>
+
+    
+    <script>
+         document.addEventListener('DOMContentLoaded',function(){
+            const images = document.querySelectorAll("img")
+            for (i = 0; i < images.length; i++) {
+                let image = images[i].getAttribute("data-src")
+                images[i].setAttribute("src", image)
+            }
+         })
+            
+       
+    </script>
+
+</body>
+
+</html>
